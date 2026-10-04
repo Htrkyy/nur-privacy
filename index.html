@@ -128,7 +128,7 @@
       <!-- ============================ TÜRKÇE ============================ -->
       <article data-lang="tr" lang="tr">
         <h1>Gizlilik Politikası</h1>
-        <p class="meta">Yürürlük tarihi: 30 Eylül 2026</p>
+        <p class="meta">Yürürlük tarihi: 4 Ekim 2026</p>
 
         <div class="summary">
           <ul>
@@ -148,7 +148,7 @@
         <h2>1. Konum</h2>
         <p>Namaz vakitleri bulunduğun yere göre değişir. Bu yüzden Uygulama, Namaz sekmesinde “Kullan” ya da “Güncelle” düğmesine bastığında konum izni ister ve konumunu bir kez alır.</p>
         <ul>
-          <li>Düşük doğrulukta (şehir düzeyinde) konum istenir. Konum arka planda alınmaz ve sürekli takip edilmez.</li>
+          <li>Yalnızca yaklaşık (şehir düzeyinde) konum izni istenir; hassas konum izni istenmez. Konum arka planda alınmaz ve sürekli takip edilmez.</li>
           <li>Enlem, boylam ve şehir/ülke adı cihazında saklanır; namaz vakitleri ve kıble yönü tamamen cihazında hesaplanır.</li>
           <li>Koordinatları şehir adına çevirmek için Android’in yerleşik adres (geocoding) hizmeti kullanılır. Bu hizmet koordinatları Google’a gönderebilir; bu işlem Google’ın gizlilik politikasına tabidir.</li>
           <li>Konum Hizmet Sağlayıcıya gönderilmez ve reklam isteklerine eklenmez.</li>
@@ -159,10 +159,10 @@
         <p>Kıble pusulası, yönü bulmak için cihazının manyetik sensörünü kullanır. Sensör verisi yalnızca ekran açıkken anlık olarak işlenir, saklanmaz ve hiçbir yere gönderilmez.</p>
 
         <h2>3. Bildirimler ve alarmlar</h2>
-        <p>Ezan ve imsak bildirimlerini açarsan bildirimler cihazının kendi bildirim sisteminde, hesaplanan vakitlere göre planlanır. Bunun için bildirim, tam zamanlı alarm ve cihaz yeniden başladığında bildirimleri yeniden kurma izinleri kullanılır. Bildirimler bir sunucudan gönderilmez (anlık/push bildirim yoktur). Ezan sesi Uygulamanın içinde bulunur.</p>
+        <p>Ezan ve imsak bildirimlerini açarsan bildirimler cihazının kendi bildirim sisteminde, hesaplanan vakitlere göre planlanır. Bunun için bildirim ve cihaz yeniden başladığında bildirimleri yeniden kurma izinleri kullanılır. Bildirimler varsayılan olarak Android’in uygun gördüğü birkaç dakikalık sapmayla çalar; Ayarlar’da <strong>Tam vakitte çalsın</strong> seçeneğini açar ve “Alarmlar ve hatırlatıcılar” iznini verirsen tam vaktinde çalar. Bu izni istediğin zaman cihaz ayarlarından geri alabilirsin. Bildirimler bir sunucudan gönderilmez (anlık/push bildirim yoktur). Ezan sesi Uygulamanın içinde bulunur.</p>
 
         <h2>4. Cihazında saklanan veriler</h2>
-        <p>Aşağıdaki bilgiler yalnızca cihazındaki uygulama deposunda tutulur ve Hizmet Sağlayıcıya gönderilmez:</p>
+        <p>Aşağıdaki bilgiler yalnızca cihazındaki uygulama deposunda tutulur ve Hizmet Sağlayıcıya gönderilmez. Uygulama verileri bulut yedeğine alınmaz ve cihazdan cihaza aktarılmaz:</p>
         <ul>
           <li>Konum (enlem, boylam, şehir adı)</li>
           <li>Tema, dil ve bildirim tercihleri</li>
@@ -196,8 +196,8 @@
         <h2>İzinler</h2>
         <table>
           <tr><th>İzin</th><th>Neden</th></tr>
-          <tr><td>Konum (yaklaşık / tam)</td><td>Namaz vakitleri ve kıble; yalnızca düğmeye bastığında</td></tr>
-          <tr><td>Bildirim, tam zamanlı alarm, açılışta başlatma, titreşim</td><td>Ezan ve imsak bildirimleri</td></tr>
+          <tr><td>Yaklaşık konum</td><td>Namaz vakitleri ve kıble; yalnızca düğmeye bastığında</td></tr>
+          <tr><td>Bildirim, açılışta başlatma, titreşim ve isteğe bağlı tam zamanlı alarm</td><td>Ezan ve imsak bildirimleri</td></tr>
           <tr><td>İnternet</td><td>Reklamlar, satın alma, adres adı ve yazı tipleri</td></tr>
           <tr><td>Reklam kimliği</td><td>AdMob tarafından reklam için</td></tr>
         </table>
@@ -262,7 +262,7 @@
       <!-- ============================ ENGLISH ============================ -->
       <article data-lang="en" lang="en">
         <h1>Privacy Policy</h1>
-        <p class="meta">Effective date: September 30, 2026</p>
+        <p class="meta">Effective date: October 4, 2026</p>
 
         <div class="summary">
           <ul>
@@ -282,7 +282,7 @@
         <h2>1. Location</h2>
         <p>Prayer times depend on where you are. When you tap “Use” or “Update” on the Prayer tab, the Application asks for location permission and reads your location once.</p>
         <ul>
-          <li>Low-accuracy (city-level) location is requested. Location is never read in the background and you are not tracked continuously.</li>
+          <li>Only approximate (city-level) location permission is requested; precise location is never requested. Location is never read in the background and you are not tracked continuously.</li>
           <li>Latitude, longitude and the city/country name are stored on your device; prayer times and the qibla direction are calculated entirely on your device.</li>
           <li>To turn coordinates into a city name, Android’s built-in geocoding service is used. This service may send the coordinates to Google, subject to Google’s privacy policy.</li>
           <li>Location is not sent to the Service Provider and is not attached to ad requests.</li>
@@ -293,10 +293,10 @@
         <p>The qibla compass uses your device’s magnetometer to find the direction. Sensor data is processed in real time while the screen is open; it is not stored or sent anywhere.</p>
 
         <h2>3. Notifications and alarms</h2>
-        <p>If you turn on adhan or imsak notifications, they are scheduled in your device’s own notification system based on the calculated times. This uses the notification, exact alarm and restart-after-reboot permissions. No notifications are sent from a server (there are no push notifications). The adhan sound is bundled with the Application.</p>
+        <p>If you turn on adhan or imsak notifications, they are scheduled in your device’s own notification system based on the calculated times. This uses the notification and restart-after-reboot permissions. By default alerts ring within a few minutes of the time, as Android sees fit; if you turn on <strong>Ring at the exact time</strong> in Settings and grant the “Alarms &amp; reminders” permission, they ring right on time. You can revoke that permission at any time in your device settings. No notifications are sent from a server (there are no push notifications). The adhan sound is bundled with the Application.</p>
 
         <h2>4. Data stored on your device</h2>
-        <p>The following is kept only in the Application’s storage on your device and is not sent to the Service Provider:</p>
+        <p>The following is kept only in the Application’s storage on your device and is not sent to the Service Provider. Application data is excluded from cloud backups and device-to-device transfers:</p>
         <ul>
           <li>Location (latitude, longitude, city name)</li>
           <li>Theme, language and notification preferences</li>
@@ -330,8 +330,8 @@
         <h2>Permissions</h2>
         <table>
           <tr><th>Permission</th><th>Why</th></tr>
-          <tr><td>Location (approximate / precise)</td><td>Prayer times and qibla; only when you tap the button</td></tr>
-          <tr><td>Notifications, exact alarms, run at startup, vibration</td><td>Adhan and imsak notifications</td></tr>
+          <tr><td>Approximate location</td><td>Prayer times and qibla; only when you tap the button</td></tr>
+          <tr><td>Notifications, run at startup, vibration and optional exact alarms</td><td>Adhan and imsak notifications</td></tr>
           <tr><td>Internet</td><td>Ads, purchases, place names and fonts</td></tr>
           <tr><td>Advertising ID</td><td>Used by AdMob for ads</td></tr>
         </table>
@@ -396,7 +396,7 @@
       <!-- ============================ العربية ============================ -->
       <article data-lang="ar" lang="ar" dir="rtl">
         <h1>سياسة الخصوصية</h1>
-        <p class="meta">تاريخ السريان: 30 سبتمبر 2026</p>
+        <p class="meta">تاريخ السريان: 4 أكتوبر 2026</p>
 
         <div class="summary">
           <ul>
@@ -416,7 +416,7 @@
         <h2>1. الموقع</h2>
         <p>تختلف أوقات الصلاة باختلاف مكانك. لذلك يطلب التطبيق إذن الموقع ويقرأ موقعك مرة واحدة عندما تضغط «استخدم» أو «حدّث» في تبويب الصلاة.</p>
         <ul>
-          <li>يُطلب موقع منخفض الدقة (على مستوى المدينة). لا يُقرأ الموقع في الخلفية ولا يتم تتبّعك بشكل مستمر.</li>
+          <li>يُطلب إذن الموقع التقريبي فقط (على مستوى المدينة)، ولا يُطلب الموقع الدقيق. لا يُقرأ الموقع في الخلفية ولا يتم تتبّعك بشكل مستمر.</li>
           <li>تُحفظ خطوط العرض والطول واسم المدينة والدولة على جهازك، وتُحسب أوقات الصلاة واتجاه القبلة بالكامل على جهازك.</li>
           <li>لتحويل الإحداثيات إلى اسم مدينة تُستخدم خدمة العناوين (Geocoding) المدمجة في Android. قد ترسل هذه الخدمة الإحداثيات إلى Google، ويخضع ذلك لسياسة خصوصية Google.</li>
           <li>لا يُرسل الموقع إلى مقدّم الخدمة ولا يُضاف إلى طلبات الإعلانات.</li>
@@ -427,10 +427,10 @@
         <p>تستخدم بوصلة القبلة المستشعر المغناطيسي في جهازك لتحديد الاتجاه. تُعالج بيانات المستشعر لحظيًا أثناء فتح الشاشة فقط، ولا تُحفظ ولا تُرسل إلى أي جهة.</p>
 
         <h2>3. الإشعارات والمنبّهات</h2>
-        <p>إذا فعّلت تنبيهات الأذان أو الإمساك، تُجدول في نظام الإشعارات الخاص بجهازك وفق الأوقات المحسوبة. ويستخدم ذلك أذونات الإشعارات والمنبّهات الدقيقة وإعادة الجدولة بعد إعادة تشغيل الجهاز. لا تُرسل أي إشعارات من خادم (لا توجد إشعارات فورية). صوت الأذان مضمّن في التطبيق.</p>
+        <p>إذا فعّلت تنبيهات الأذان أو الإمساك، تُجدول في نظام الإشعارات الخاص بجهازك وفق الأوقات المحسوبة. ويستخدم ذلك أذونات الإشعارات وإعادة الجدولة بعد إعادة تشغيل الجهاز. افتراضيًا ترنّ التنبيهات خلال بضع دقائق من الوقت بحسب ما يراه أندرويد؛ وإذا فعّلت خيار <strong>التنبيه في الوقت المحدد تمامًا</strong> في الإعدادات ومنحت إذن «المنبّهات والتذكيرات» فإنها ترنّ في وقتها تمامًا. يمكنك سحب هذا الإذن في أي وقت من إعدادات الجهاز. لا تُرسل أي إشعارات من خادم (لا توجد إشعارات فورية). صوت الأذان مضمّن في التطبيق.</p>
 
         <h2>4. البيانات المحفوظة على جهازك</h2>
-        <p>تُحفظ المعلومات التالية فقط في مساحة تخزين التطبيق على جهازك ولا تُرسل إلى مقدّم الخدمة:</p>
+        <p>تُحفظ المعلومات التالية فقط في مساحة تخزين التطبيق على جهازك ولا تُرسل إلى مقدّم الخدمة. لا تُنسخ بيانات التطبيق احتياطيًا إلى السحابة ولا تُنقل من جهاز إلى آخر:</p>
         <ul>
           <li>الموقع (خط العرض، خط الطول، اسم المدينة)</li>
           <li>تفضيلات المظهر واللغة والإشعارات</li>
@@ -464,8 +464,8 @@
         <h2>الأذونات</h2>
         <table>
           <tr><th>الإذن</th><th>السبب</th></tr>
-          <tr><td>الموقع (التقريبي / الدقيق)</td><td>أوقات الصلاة والقبلة، وعند الضغط على الزر فقط</td></tr>
-          <tr><td>الإشعارات، المنبّهات الدقيقة، التشغيل عند بدء الجهاز، الاهتزاز</td><td>تنبيهات الأذان والإمساك</td></tr>
+          <tr><td>الموقع التقريبي</td><td>أوقات الصلاة والقبلة، وعند الضغط على الزر فقط</td></tr>
+          <tr><td>الإشعارات، التشغيل عند بدء الجهاز، الاهتزاز، والمنبّهات الدقيقة (اختياري)</td><td>تنبيهات الأذان والإمساك</td></tr>
           <tr><td>الإنترنت</td><td>الإعلانات والشراء وأسماء الأماكن والخطوط</td></tr>
           <tr><td>المعرّف الإعلاني</td><td>يستخدمه AdMob للإعلانات</td></tr>
         </table>
@@ -528,15 +528,15 @@
       </article>
     </div>
 
-    <footer>Nur · Hüseyin Türk · <span id="foot">Gizlilik Politikası · Yürürlük 30.09.2026</span></footer>
+    <footer>Nur · Hüseyin Türk · <span id="foot">Gizlilik Politikası · Yürürlük 04.10.2026</span></footer>
   </main>
 
   <script>
     (function () {
       var foot = {
-        tr: 'Gizlilik Politikası · Yürürlük 30.09.2026',
-        en: 'Privacy Policy · Effective 2026-09-30',
-        ar: 'سياسة الخصوصية · سارية من 30-09-2026'
+        tr: 'Gizlilik Politikası · Yürürlük 04.10.2026',
+        en: 'Privacy Policy · Effective 2026-10-04',
+        ar: 'سياسة الخصوصية · سارية من 04-10-2026'
       };
       var langs = ['tr', 'en', 'ar'];
       function set(lang) {
